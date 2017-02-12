@@ -35,9 +35,9 @@ certificates shipped by default with Janus Gateway. To generate a self-signed
 certificate, use OpenSSL:
 
 ```sh
-cd /usr/share/janus/certs
+cd /etc/janus
 sudo openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 \
-  -keyout mycert.key -out mycert.pem
+  -keyout cert.key -out cert.pem
 ```
 
 In (open)SUSE, the gateway can be then started (after adjusting the list of
